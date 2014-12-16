@@ -31,14 +31,14 @@ STEP 4
 ======
 Associate the creditcard data to this customer using a Payment Profile:
 
-$payment->createPaymentProfile('holder_name', 'card_expiration', 'card_number', 'card_cvv, $customer_id)
+$payment->createPaymentProfile('holder_name', 'card_expiration', 'card_number', 'card_cvv, $customer_id);
 
 
 STEP 5
 ======
 Create a bill that will try to capture the amount specified from the Payment Profile linked to the current customer
 
-$payment->createBill($customer_id, 'credit_card', 'amount', 'default_product_id')
+$payment->createBill($customer_id, 'credit_card', 'amount', 'default_product_id');
 
 
 In this example, you don't have to create multiple products at VINDI's website (only one!).
